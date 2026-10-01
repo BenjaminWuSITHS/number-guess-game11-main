@@ -21,4 +21,23 @@ def game():
             guess_history.append(integer)
             numguess +=1
 
-game()
+# game()
+
+def frenglish(Tx):
+    numS = 0
+    numT = 0
+    for i in Tx:
+        if i == "s" or "S":
+            numS =+ 1
+            print(f"{i} is an s")
+    if numS >= numT:
+        print("french")
+        print(numS)
+        print(numT)
+    else:
+        print("english")
+
+cool = "The red cat sat on the mat. Why are you so sad cat? Don't ask that."
+frenglish(cool)
+
+    
