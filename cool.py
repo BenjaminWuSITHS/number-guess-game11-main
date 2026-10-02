@@ -24,16 +24,15 @@ def game():
 # game()
 
 def frenglish(Tx):
-    numS = 0
-    numT = 0
-    for i in Tx:
-        if i == "s" or "S":
-            numS =+ 1
-            print(f"{i} is an s")
+    numS = numT = 0
+    lowTx = Tx.lower()
+    for i in lowTx:
+        if i == "s":
+            numS += 1
+        elif i == "t":
+            numT += 1
     if numS >= numT:
         print("french")
-        print(numS)
-        print(numT)
     else:
         print("english")
 
